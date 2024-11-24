@@ -1,3 +1,7 @@
+:root {
+    --red: #D83933;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +14,16 @@ html {
     height: 100%;
 }
 
-/* Header styling */
 html {
     font-size: 10px;
 }
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header styling */
 
 header {
     background-color: #000;
@@ -40,6 +50,7 @@ header .search {
     outline: none;
     padding: .7rem 1rem;
     color: #fff;
+    border-radius: 5px;
 }
 
 header :is(button, a) {
@@ -55,4 +66,103 @@ header :is(button, a) {
 
 header button:focus {
     border: 3px solid #2491FF;
+}
+
+/*  END */
+
+/* hero-section styling */
+.hero-section {
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    position: relative;
+}
+
+.hero-section>.bg-img {
+    height: 100vh;
+    width: 100vw;
+    background: url("https://www.nasa.gov/wp-content/uploads/2024/11/hubble-fuorionis-stsci-01jd10swk9vb6mq9440erz8qp0.jpg?resize=2000,1124") no-repeat;
+    filter: brightness(60%);
+    background-position: top bottom;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.hero-head {
+    font-size: 62px;
+    margin-bottom: 16px;
+}
+
+.hero-para {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    width: 40%;
+    margin-bottom: 18px;
+}
+
+.hero-content>div:first-child {
+    padding: 100px 20px 20px 20px;
+}
+
+.hero-content-btn {
+    background-color: #D83933;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #ad1d18;
+    }
+}
+
+.hero-content-bottom {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content-bottom>div {}
+
+.hero-content-bottom>div:first-child {
+    display: flex;
+    gap: 20px;
+
+    &>div {
+        border-top: 1px solid #dedede9f;
+        padding: 12px;
+        padding-left: 0;
+    }
+}
+
+.hero-content-bottom p {
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.hero-content-bottom p.bold {
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.hero-content-bottom .right-arrow {
+    background-color: var(--red);
+    padding: 7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15.5px;
+    font-size: 12px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
