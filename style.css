@@ -1,11 +1,17 @@
-:root {
-    --red: #D83933;
+@font-face {
+    font-family: poppins;
+    src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Bold poppins";
+    src: url("./assets/fonts/Poppins-Bold.ttf");
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: poppins;
 }
 
 body,
@@ -14,155 +20,341 @@ html {
     height: 100%;
 }
 
-html {
-    font-size: 10px;
+body {
+    overflow-x: hidden;
 }
 
 main {
     position: relative;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 /* Header styling */
 
 header {
+    width: 100%;
+    height: 60px;
     background-color: #000;
-    padding: 1rem 2rem;
+    padding: 40px 30px;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
     align-items: center;
 }
 
-header .logo {
-    width: 50px;
-    height: 50px;
+.logo img {
+    width: 60px;
 }
 
-header>div:not(:nth-child(2)) {
+header div:not(:nth-child(2)) {
     display: flex;
-    gap: 1rem;
+    gap: 25px;
     align-items: center;
+
 }
 
-header .search {
-    background-color: #000;
-    border: 1px solid rgba(167, 167, 167, 0.61);
-    outline: none;
-    padding: .7rem 1rem;
-    color: #fff;
-    border-radius: 5px;
-}
-
-header :is(button, a) {
-    text-decoration: none;
-    background: none;
+header button {
     border: none;
-    padding: 1rem;
     color: #fff;
-    font-weight: 600;
-    font-size: 1.6rem;
+    padding: 15px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-header button:focus {
-    border: 3px solid #2491FF;
+header>div>input {
+    padding: 7px 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 4px;
 }
 
-/*  END */
-
-/* hero-section styling */
-.hero-section {
-    height: 100vh;
-    width: 100vw;
+a {
+    text-decoration: none;
     color: #fff;
+    cursor: pointer;
+}
+
+header a {
+    color: #fff;
+    padding: 15px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+    &>small {
+        border: 1px solid red;
+        padding: 0 3px;
+        letter-spacing: 3.5px;
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    &:hover>small {
+        background-color: #B60109;
+    }
+}
+
+/* END */
+
+/* hero-section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
-.hero-section>.bg-img {
-    height: 100vh;
-    width: 100vw;
-    background: url("https://www.nasa.gov/wp-content/uploads/2024/11/hubble-fuorionis-stsci-01jd10swk9vb6mq9440erz8qp0.jpg?resize=2000,1124") no-repeat;
-    filter: brightness(60%);
-    background-position: top bottom;
+.img-container .image {
+    width: 100%;
+    height: 100%;
+}
+
+.img-container .dark-overlay {
     position: absolute;
     top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 34%;
+    width: 45%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-content .heading {
+    font-size: 62px;
+    line-height: 80px;
+    font-family: "Bold poppins";
+}
+
+.hero-content .primary-link {
+    position: relative;
+    font-family: "bold poppins", "poppins", "sans-serif";
+    font-size: 20px;
+    color: #fff;
+    display: block;
+
+    &>i {
+        position: absolute;
+        bottom: 20%;
+        margin-left: 6px;
+        color: #fff;
+        font-size: 10px;
+        background-color: red;
+        padding: 5px;
+        border-radius: 50px;
+        transform: rotate(308deg);
+    }
+
+    &:hover i {
+        background-color: darkred;
+    }
+}
+
+/* END */
+
+/* featuredNews section styling */
+.primary-link {
+    font-family: "bold poppins", "poppins", "sans-serif";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
+    &>i {
+        margin-left: 8px;
+        color: #fff;
+        font-size: 10px;
+        background-color: red;
+        padding: 5px;
+        border-radius: 50px;
+        transform: rotate(308deg);
+
+    }
+
+    &:hover i {
+        background-color: darkred;
+    }
+}
+
+.featuredNews {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 93%;
+}
+
+.featuredNewsHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px 0;
+    color: #000;
+}
+
+.featuredNewsHead h2 {
+    font-size: 37px;
+}
+
+.primary-link span {
+    font-weight: bold;
+}
+
+.featuredNewsRow1 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    gap: 1.2%;
+}
+
+.featuredNewsRow1>div:first-child {
+    flex: 5.5;
+}
+
+/* extra */
+body {
+    height: 1200px;
+}
+
+.featuredNewsRow1>div:nth-child(2) {
+    flex: 2.2;
+}
+
+.featuredNewsRow1>div:nth-child(3) {
+    flex: 2.8;
+}
+
+.featuredNewsRow1>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.featuredNewsContent .boxes {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+
+    &>.boxesContent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &>:first-child {
+            flex: 20;
+        }
+
+        &>:last-child {
+            flex: 80;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+
+    & p {
+        font-size: 10px;
+        letter-spacing: 5px;
+    }
+
+    & h3 {
+        font-size: 13px;
+        font-family: bold poppins;
+    }
+}
+
+.featuredNewsContent .box-1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://science.nasa.gov/wp-content/uploads/2024/11/hotneptune-1280c.jpeg");
+
+}
+
+.featuredNewsContent .box-2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://assets.science.nasa.gov/dynamicimage/assets/science/missions/xrism/News/2024/cygnus-x-3/Cyg_X-3_illustration_AC.jpg");
+
+}
+
+.featuredNewsContent .box-3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://science.nasa.gov/wp-content/uploads/2024/11/webb-stsci-01jcgz71j2wy7vrn04ypbyb5x4-2k.png");
+
+}
+
+.featuredNewsContent .box-4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://www.nasa.gov/wp-content/uploads/2024/11/1-pia26443-spacecraft-illustration.jpg?resize=1536,864");
+
+}
+
+.featuredNewsContent .boxes .dark-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
     z-index: -1;
 }
 
-.hero-head {
-    font-size: 62px;
-    margin-bottom: 16px;
+.featuredNewsRow2 {
+    display: flex;
+    gap: 8px;
+    color: #000;
+    margin-top: 15px;
 }
 
-.hero-para {
-    font-size: 15px;
-    line-height: 22px;
-    text-align: justify;
-    width: 40%;
-    margin-bottom: 18px;
-}
-
-.hero-content>div:first-child {
-    padding: 100px 20px 20px 20px;
-}
-
-.hero-content-btn {
-    background-color: #D83933;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:hover {
-        background-color: #ad1d18;
-    }
-}
-
-.hero-content-bottom {
-    position: absolute;
-    bottom: 0;
-    padding: 20px;
-    width: 100%;
+.featuredNewsRow2>.boxes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-content-bottom>div {}
-
-.hero-content-bottom>div:first-child {
-    display: flex;
-    gap: 20px;
-
-    &>div {
-        border-top: 1px solid #dedede9f;
-        padding: 12px;
-        padding-left: 0;
-    }
-}
-
-.hero-content-bottom p {
-    letter-spacing: 3px;
-    font-size: 12px;
-}
-
-.hero-content-bottom p.bold {
-    font-weight: 600;
-    margin-top: 20px;
-    font-size: 15px;
-}
-
-.hero-content-bottom .right-arrow {
-    background-color: var(--red);
     padding: 7px;
-    width: 15px;
-    height: 15px;
-    border-radius: 15.5px;
+}
+
+.featuredNewsRow2>.boxes h4 {
     font-size: 12px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    margin: 3.5px 0;
+}
+
+.featuredNewsRow2>.boxes img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
 }

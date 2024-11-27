@@ -4,77 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA Clone</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome cdn -->
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
 <body>
     <header>
         <div>
             <button>Explore</button>
-            <input type="text" placeholder="Search..." class="search" name="" id="">
+            <input type="text" placeholder="Search..." name="" id="">
         </div>
-        <div>
-            <img class="logo" src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="">
+        <div class="logo">
+            <img src="./assets/images/nasa-logo.svg" alt="">
         </div>
         <div>
             <button>News & Events</button>
             <button>Multimedia</button>
-            <a href="">NASA+ <span>LIVE</span></a>
+            <a>NASA + <small>LIVE</small></a>
         </div>
     </header>
     <main>
         <section class="hero-section">
-            <div class="bg-img"></div>
+            <div class="img-container">
+                <img src="./assets/images/bg-hero.webp" class="image" alt="">
+                <div class="dark-overlay"></div>
+            </div>
             <div class="hero-content">
+                <h1 class="heading">Warm Up Your Holidays</h1>
+                <p class="para">Look no further than this cozy and relaxing fireplace—complete with four RS-25 rocket
+                    engines and 8.8
+                    million pounds of thrust—to fill your hearth with light and power your party to the Moon!</p>
                 <div>
-                    <h1 class="hero-head">A Young, <br>Eruptive Star</h1>
-                    <p class="hero-para">A team of astronomers has wielded the Hubble Space Telescope's ultraviolet
-                        capabilities to learn
-                        more
-                        about the interaction between the young star FU Orionis' stellar surface and the accretion
-                        disk
-                        that has
-                        been dumping gas onto the growing star for nearly 90 years.</p>
-                    <button class="hero-content-btn">Hubble Science</button>
-                </div>
-                <div class="hero-content-bottom">
-                    <div>
-                        <div>
-                            <p>CURVE APPEAL</p>
-                            <p class="bold">Spiral Galaxy UGC 10043<i class="fa-solid fa-arrow-right right-arrow"></i>
-                            </p>
-                        </div>
-                        <div>
-                            <p>EXTERME COSMIC OBJECT</p>
-                            <p class="bold">Guitar Nebula<i class="fa-solid fa-arrow-right right-arrow"></i></p>
-                        </div>
-                        <div>
-                            <p>TANGLED GALAXIES</p>
-                            <p class="bold"> THE COMA CLUSTER<i class="fa-solid fa-arrow-right right-arrow"></i></p>
-                        </div>
-                    </div>
-                    <div>
-                        <button>
-                            <img src="https://www.nasa.gov/wp-content/uploads/2024/11/hubble-fuorionis-stsci-01jd10swk9vb6mq9440erz8qp0.jpg?resize=40,40"
-                                alt="">
-                        </button>
-                        <button><i class="fa-solid fa-pause"></i></button>
-                    </div>
+                    <a href="" class="primary-link">NASA Virtual Fireplace<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
+
         </section>
-        <section class="feature-section">
-            <div>
-                <h2>Featured News</h2>
-                <a href="">More NASA News</a>
+        <section class="featuredNews">
+            <div class="container">
+                <div class="featuredNewsHead">
+                    <h2>Featured News</h2>
+                    <a href="" class="primary-link">
+                        <span>More NASA News</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="featuredNewsContent">
+                    <div class="featuredNewsRow1">
+                        <div class="featuredNewsCols">
+                            <div class="boxes box-1">
+                                <div class="dark-overlay"></div>
+                                <div class="boxesContent">
+                                    <div>
+                                        <p>ARTICLE</p>
+                                    </div>
+                                    <div>
+                                        <p>4 MIN READ</p>
+                                        <h3>Discovery Alert: a'Hot Neptune' in a Tight Orbit</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featuredNewsCols">
+                            <div class="boxes box-2">
+                                <div class="dark-overlay"></div>
+                                <div class="boxesContent">
+                                    <div>
+                                        <p>ARTICLE</p>
+                                    </div>
+                                    <div>
+                                        <p>4 MIN READ</p>
+                                        <h3>Discovery Alert: a'Hot Neptune' in a Tight Orbit</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featuredNewsCols">
+                            <div class="boxes box-3">
+                                <div class="dark-overlay"></div>
+                                <div class="boxesContent">
+                                    <div>
+                                        <p>ARTICLE</p>
+                                    </div>
+                                    <div>
+                                        <p>5 MIN READ</p>
+                                        <h3>Hats Off to NASA's Webb: Sombrero Galaxy Dazzles in New Image</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxes box-4">
+                                <div class="dark-overlay"></div>
+                                <div class="boxesContent">
+                                    <div>
+                                        <p>ARTICLE</p>
+
+                                    </div>
+                                    <div>
+                                        <p>5 MIN READ</p>
+                                        <h3>NASA's Europa Clipper: Millions of Miles Down, Instruments Deploying</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featuredNewsRow2">
+                        <div class="boxes">
+                            <div>
+                                <img src="https://science.nasa.gov/wp-content/uploads/2024/11/sanaa-oli-20240608-1440.jpg"
+                                    alt="">
+                            </div>
+                            <div>
+                                <p class="light-para">5 MIN READ</p>
+                                <h4>NASA Data Reveals Role of Green Spaces in Cooling Cities</h4>
+                                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <div>
+                                <img src="https://www.nasa.gov/wp-content/uploads/2024/11/rhh-8037.jpg?resize=200,200"
+                                    alt="">
+                            </div>
+                            <div>
+                                <p class="light-para">2 MIN READ</p>
+                                <h4>NASA's X-66 Sustainable Aircraft Model Sails Through First Wind Tests</h4>
+                                <p><i class="fa-solid fa-newspaper"></i>IMAGE ARTICLE</p>
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <div>
+                                <img src="https://images-assets.nasa.gov/image/iss072e034702/iss072e034702~large.jpg?w=1920&h=1280&fit=crop&crop=faces%2Cfocalpoint"
+                                    alt="">
+                            </div>
+                            <div>
+                                <p class="light-para">6 MIN READ</p>
+                                <h4>FAQ: The Real Story About Astronaut Health Care in Space</h4>
+                                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <div>
+                                <img src="https://www.nasa.gov/wp-content/uploads/2024/11/11-kitiashvili-i-sc24-sunhelicitytour0.jpg?resize=200,200"
+                                    alt="">
+                            </div>
+                            <div>
+                                <p class="light-para">3 MIN READ</p>
+                                <h4>Ready, Set, Action! Our Sun is the Star in Dazzling Simulation</h4>
+                                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 </body>
 
 </html>
+
+
