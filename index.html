@@ -2,168 +2,370 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-
 <body>
-    <header>
-        <div>
-            <button>Explore</button>
-            <input type="text" placeholder="Search..." name="" id="">
+  <header>
+    <div>
+      <button>Explore</button>
+      <input type="text" placeholder="Search..." name="" id="" />
+    </div>
+    <div class="logo">
+      <img src="./assets/images/nasa-logo.svg" alt="" />
+    </div>
+    <div>
+      <button>News & Events</button>
+      <button>Multimedia</button>
+      <a>NASA + <small>LIVE</small></a>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-title">FEATURED VIDEO</p>
+          <h1 class="hero-head">Thanksgiving on the Space Station</h1>
+          <p class="hero-para">
+            Aboard the International Space Station, NASA Expedition 72 crew
+            members Suni Williams, Nick Hague, Butch Wilmore, and Don Pettit
+            wish a happy Thanksgiving to Earth. The crew share their thoughts
+            on the holiday, as well as their plans for their Thanksgiving
+            meal.
+          </p>
+          <a href="" class="primary-link">
+            <span>Expedition 72</span>
+            <i class="fa-solid fa-arrow-right rotate"></i>
+          </a>
         </div>
-        <div class="logo">
-            <img src="./assets/images/nasa-logo.svg" alt="">
+        <div class="hero-video">
+          <iframe src="https://www.youtube.com/embed/DO2tTUmoXmk"
+            title="Space Station Astronauts Deliver a Thanksgiving Message for 2024" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div>
-            <button>News & Events</button>
-            <button>Multimedia</button>
-            <a>NASA + <small>LIVE</small></a>
+      </div>
+    </section>
+    <section class="featuredNews">
+      <div class="container">
+        <div class="featuredNewsHead">
+          <h2>Featured News</h2>
+          <a href="" class="primary-link">
+            <span>More NASA News</span>
+            <i class="rotate fa-solid fa-arrow-right"></i>
+          </a>
         </div>
-    </header>
-    <main>
-        <section class="hero-section">
-            <div class="img-container">
-                <img src="./assets/images/bg-hero.webp" class="image" alt="">
-                <div class="dark-overlay"></div>
-            </div>
-            <div class="hero-content">
-                <h1 class="heading">Warm Up Your Holidays</h1>
-                <p class="para">Look no further than this cozy and relaxing fireplace—complete with four RS-25 rocket
-                    engines and 8.8
-                    million pounds of thrust—to fill your hearth with light and power your party to the Moon!</p>
-                <div>
-                    <a href="" class="primary-link">NASA Virtual Fireplace<i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-        </section>
-        <section class="featuredNews">
-            <div class="container">
-                <div class="featuredNewsHead">
-                    <h2>Featured News</h2>
-                    <a href="" class="primary-link">
-                        <span>More NASA News</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="featuredNewsContent">
-                    <div class="featuredNewsRow1">
-                        <div class="featuredNewsCols">
-                            <div class="boxes box-1">
-                                <div class="dark-overlay"></div>
-                                <div class="boxesContent">
-                                    <div>
-                                        <p>ARTICLE</p>
-                                    </div>
-                                    <div>
-                                        <p>4 MIN READ</p>
-                                        <h3>Discovery Alert: a'Hot Neptune' in a Tight Orbit</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="featuredNewsCols">
-                            <div class="boxes box-2">
-                                <div class="dark-overlay"></div>
-                                <div class="boxesContent">
-                                    <div>
-                                        <p>ARTICLE</p>
-                                    </div>
-                                    <div>
-                                        <p>4 MIN READ</p>
-                                        <h3>Discovery Alert: a'Hot Neptune' in a Tight Orbit</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="featuredNewsCols">
-                            <div class="boxes box-3">
-                                <div class="dark-overlay"></div>
-                                <div class="boxesContent">
-                                    <div>
-                                        <p>ARTICLE</p>
-                                    </div>
-                                    <div>
-                                        <p>5 MIN READ</p>
-                                        <h3>Hats Off to NASA's Webb: Sombrero Galaxy Dazzles in New Image</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="boxes box-4">
-                                <div class="dark-overlay"></div>
-                                <div class="boxesContent">
-                                    <div>
-                                        <p>ARTICLE</p>
-
-                                    </div>
-                                    <div>
-                                        <p>5 MIN READ</p>
-                                        <h3>NASA's Europa Clipper: Millions of Miles Down, Instruments Deploying</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="featuredNewsContent">
+          <div class="featuredNewsRow1">
+            <div class="featuredNewsCols">
+              <div class="boxes box-1">
+                <a href="https://www.nasa.gov/centers-and-facilities/johnson/thanksgiving-celebrations-in-space-3/"
+                  target="_blank">
+                  <div class="dark-overlay"></div>
+                  <div class="boxesContent">
+                    <div>
+                      <p>ARTICLE</p>
                     </div>
-                    <div class="featuredNewsRow2">
-                        <div class="boxes">
-                            <div>
-                                <img src="https://science.nasa.gov/wp-content/uploads/2024/11/sanaa-oli-20240608-1440.jpg"
-                                    alt="">
-                            </div>
-                            <div>
-                                <p class="light-para">5 MIN READ</p>
-                                <h4>NASA Data Reveals Role of Green Spaces in Cooling Cities</h4>
-                                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
-                            </div>
-                        </div>
-                        <div class="boxes">
-                            <div>
-                                <img src="https://www.nasa.gov/wp-content/uploads/2024/11/rhh-8037.jpg?resize=200,200"
-                                    alt="">
-                            </div>
-                            <div>
-                                <p class="light-para">2 MIN READ</p>
-                                <h4>NASA's X-66 Sustainable Aircraft Model Sails Through First Wind Tests</h4>
-                                <p><i class="fa-solid fa-newspaper"></i>IMAGE ARTICLE</p>
-                            </div>
-                        </div>
-                        <div class="boxes">
-                            <div>
-                                <img src="https://images-assets.nasa.gov/image/iss072e034702/iss072e034702~large.jpg?w=1920&h=1280&fit=crop&crop=faces%2Cfocalpoint"
-                                    alt="">
-                            </div>
-                            <div>
-                                <p class="light-para">6 MIN READ</p>
-                                <h4>FAQ: The Real Story About Astronaut Health Care in Space</h4>
-                                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
-                            </div>
-                        </div>
-                        <div class="boxes">
-                            <div>
-                                <img src="https://www.nasa.gov/wp-content/uploads/2024/11/11-kitiashvili-i-sc24-sunhelicitytour0.jpg?resize=200,200"
-                                    alt="">
-                            </div>
-                            <div>
-                                <p class="light-para">3 MIN READ</p>
-                                <h4>Ready, Set, Action! Our Sun is the Star in Dazzling Simulation</h4>
-                                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
-                            </div>
-                        </div>
+                    <div>
+                      <p>6 MIN READ</p>
+                      <h3>Thanksgiving Celebrations in Space</h3>
                     </div>
-                </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </section>
-    </main>
+            <div class="featuredNewsCols">
+              <div class="boxes box-2">
+                <a href="https://science.nasa.gov/universe/exoplanets/discovery-alert-a-hot-neptune-in-a-tight-orbit/"
+                  target="_blank">
+                  <div class="dark-overlay"></div>
+                  <div class="boxesContent">
+                    <div>
+                      <p>ARTICLE</p>
+                    </div>
+                    <div>
+                      <p>4 MIN READ</p>
+                      <h3>Discovery Alert: a'Hot Neptune' in a Tight Orbit</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="featuredNewsCols">
+              <div class="boxes box-3">
+                <a href="https://science.nasa.gov/earth/climate-change/nasa-data-reveals-role-of-green-spaces-in-cooling-cities/"
+                  target="_blank">
+                  <div class="dark-overlay"></div>
+                  <div class="boxesContent">
+                    <div>
+                      <p>ARTICLE</p>
+                    </div>
+                    <div>
+                      <p>5 MIN READ</p>
+                      <h3>
+                        Hats Off to NASA's Webb: Sombrero Galaxy Dazzles in New
+                        Image
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="boxes box-4">
+                <a href="https://www.nasa.gov/missions/europa-clipper/nasas-europa-clipper-millions-of-miles-down-instruments-deploying/"
+                  target="_blank">
+                  <div class="dark-overlay"></div>
+                  <div class="boxesContent">
+                    <div>
+                      <p>ARTICLE</p>
+                    </div>
+                    <div>
+                      <p>5 MIN READ</p>
+                      <h3>
+                        NASA's Europa Clipper: Millions of Miles Down,
+                        Instruments Deploying
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="featuredNewsRow2">
+            <a href="" class="boxes">
+              <div>
+                <img src="https://science.nasa.gov/wp-content/uploads/2024/11/sanaa-oli-20240608-1440.jpg" alt="" />
+              </div>
+              <div>
+                <p class="light-para">5 MIN READ</p>
+                <h4>
+                  NASA Data Reveals Role of Green Spaces in Cooling Cities
+                </h4>
+                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
+              </div>
+            </a>
+            <a href="" class="boxes">
+              <div>
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/11/rhh-8037.jpg?resize=200,200" alt="" />
+              </div>
+              <div>
+                <p class="light-para">2 MIN READ</p>
+                <h4>
+                  NASA's X-66 Sustainable Aircraft Model Sails Through First
+                  Wind Tests
+                </h4>
+                <p><i class="fa-solid fa-newspaper"></i>IMAGE ARTICLE</p>
+              </div>
+            </a>
+            <a href="" class="boxes">
+              <div>
+                <img
+                  src="https://images-assets.nasa.gov/image/iss072e034702/iss072e034702~large.jpg?w=1920&h=1280&fit=crop&crop=faces%2Cfocalpoint"
+                  alt="" />
+              </div>
+              <div>
+                <p class="light-para">6 MIN READ</p>
+                <h4>
+                  FAQ: The Real Story About Astronaut Health Care in Space
+                </h4>
+                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
+              </div>
+            </a>
+            <a href="" class="boxes">
+              <div>
+                <img
+                  src="https://www.nasa.gov/wp-content/uploads/2024/11/11-kitiashvili-i-sc24-sunhelicitytour0.jpg?resize=200,200"
+                  alt="" />
+              </div>
+              <div>
+                <p class="light-para">3 MIN READ</p>
+                <h4>
+                  Ready, Set, Action! Our Sun is the Star in Dazzling
+                  Simulation
+                </h4>
+                <p><i class="fa-solid fa-newspaper"></i>ARTICLE</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="img-container">
+      <div class="img-box">
+        <img src="./assets/images/bg-hero.webp" class="image" alt="" />
+        <div class="dark-overlay"></div>
+      </div>
+      <div class="img-content">
+        <h1 class="heading">Warm Up <br> Your <br>Holidays</h1>
+        <p class="para">
+          Look no further than this cozy and relaxing fireplace—complete with
+          four RS-25 rocket engines and 8.8 million pounds of thrust—to fill
+          your hearth with light and power your party to the Moon!
+        </p>
+        <div>
+          <a href="" class="primary-link">
+            NASA Virtual Fireplace<i class="rotate fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="humanSpace-container">
+      <div class="container">
+        <div class="featuredNewsHead">
+          <h2>Humans in Space</h2>
+          <a href="" class="primary-link">
+            <span>Discover More</span>
+            <i class="fa-solid fa-arrow-right rotate"></i>
+          </a>
+        </div>
+        <div class="row">
+          <div class="cols">
+            <div class="img-box">
+              <img
+                src="https://images-assets.nasa.gov/image/iss063e053998/iss063e053998~large.jpg?w=1920&h=1280&fit=crop&crop=faces%2Cfocalpoint"
+                alt="" class="image">
+              <div class="dark-overlay"></div>
+            </div>
+            <div class="info">
+              <h4>Why Go to Space</h4>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="cols">
+            <div class="img-box">
+              <img src="https://www.nasa.gov/wp-content/uploads/2023/02/edu_srch_microsofts_hacking_stem.jpg" alt=""
+                class="image">
+              <div class="dark-overlay"></div>
+            </div>
+            <div class="info">
+              <h4>Astronauts</h4>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="cols">
+            <div class="img-box">
+              <img
+                src="https://images-assets.nasa.gov/image/iss041e012095/iss041e012095~large.jpg?w=1920&h=1277&fit=crop&crop=faces%2Cfocalpoint"
+                alt="" class="image">
+              <div class="dark-overlay"></div>
+            </div>
+            <div class="info">
+              <h4>Commercial Space</h4>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="cols">
+            <div class="img-box">
+              <img src="https://www.nasa.gov/wp-content/uploads/2023/01/meir-2.png" alt="" class="image">
+              <div class="dark-overlay"></div>
+            </div>
+            <div class="info">
+              <h4>Living in Space</h4>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="img-container">
+      <div class="img-box">
+        <img src="https://www.nasa.gov/wp-content/uploads/2024/11/ksc-20171214-ph-sww01-0009orig.jpeg?resize=2000,1333"
+          class="image" alt="" />
+        <div class="dark-overlay"></div>
+      </div>
+      <div class="img-content">
+        <h1 class="heading">Earth <br> Information <br>Center </h1>
+        <p class="para">
+          For more than 50 years, NASA satellites have provided data on Earth's land, water, air, temperature, and
+          climate. NASA's Earth Information Center allows visitors to see how our planet is changing in six key areas:
+          sea level rise and coastal impacts, health and air quality, wildfires, greenhouse gases, sustainable energy,
+          and agriculture.
+        </p>
+        <div>
+          <a href="" class="primary-link">
+            Start Exploring<i class="rotate fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <section class="imageOfTheDay">
+      <div class="container">
+        <div class="imageOfTheDayInner">
+          <div class="imageOfTheDayContent">
+            <div>
+              <p class="imageOfTheDayTitle">TODAY</p>
+              <div class="heading">Image Of The Day</div>
+            </div>
+            <div>
+              <div class="sub-head">John Herrington Performs a Spacewalk</div>
+              <p class="para">In this photograph astronaut and STS-113 mission specialist John B. Herrington, (center
+                frame),
+                participates in the mission's third spacewalk. The forward section of the Space Shuttle Endeavour is in
+                right frame.</p>
+              <a href="" class="imageOfTheDayLinks">Browse Image Archieve
+                <i class="fa-solid fa-arrow-right right-arrows"></i></a>
+            </div>
+          </div>
+          <div class="imageOfTheDay-container">
+            <a href="https://www.nasa.gov/image-detail/0302398orig/" target="_blank">
+              <img src="https://www.nasa.gov/wp-content/uploads/2024/11/0302398orig.jpg?resize=2000,1321" alt="">
+            </a>
+            <a href="" class="imageOfTheDayLinks">
+              <span>View Image</span>
+              <i class="fa-solid fa-arrow-right right-arrows"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="moreImages">
+      <div>
+        <div class="heading">More NASA Images</div>
+      </div>
+    
+    </section>
+    <section class="aboutNASA">
+      <div class="container">
+        <div class="aboutNASA-content">
+          <h5>About NASA</h5>
+          <div class="heading">Affirming Native Voices</div>
+          <p>Each November, NASA commemorates National Native American Heritage Month by celebrating the traditions,
+            languages, stories, and cultures of Indigenous peoples who have shaped our country since before its
+            beginning.
+            We are proud to honor Indigenous communities and their contributions to NASA's mission. </p>
+          <a class="primary-link" href="">Native American Heritage Month <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="video-container">
+          <video autoplay loop muted>
+            <source src="https://www.nasa.gov/wp-content/uploads/2024/11/native-american-hm-newcc-1.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+    <div class="explore-img-container">
+      <div class="img-box">
+        <img src="https://www.nasa.gov/wp-content/uploads/2023/01/webb-tarantula-neb.png?resize=2000,1561" class="image"
+          alt="" />
+      </div>
+      <div class="img-content">
+        <h1 class="heading">Explore the <br> Universe from <br></h1>
+        Stay up-to-date on the latest news from NASA-from Earth to the Moon, the Solar System and beyond.
+        </p>
+        <p>We'll never share your email address. <a href="">Privacy Policy</a></p>
+        <div>
+          <a target="_blank" href="https://lp.constantcontactpages.com/sl/7ThAX6O/signup" class="primary-link">
+            Sign Up<i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
-
-
