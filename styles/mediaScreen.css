@@ -171,6 +171,9 @@
         display: flex;
         align-items: center;
     }
+
+    .swiper-wrapper>.boxes {
+    }
 }
 
 @media only screen and (max-width:450px) {

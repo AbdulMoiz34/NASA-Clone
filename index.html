@@ -636,11 +636,34 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    let showElem = 2;
     let swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
+      slidesPerView: showElem,
       spaceBetween: 20,
     });
+    const mobileQuery = window.matchMedia("(max-width: 740px)");
+    function handleScreenSizeChange(event) {
+      if (event.matches) {
+        showElem = 1;
+        swiper.params.slidesPerView = showElem; // Update Swiper settings
+        swiper.update(); // Refresh Swiper instance
+        console.log("Mobile screen detected: showing 1 slide.");
+      } else {
+        showElem = 2;
+        swiper.params.slidesPerView = showElem; // Update Swiper settings
+        swiper.update(); // Refresh Swiper instance
+        console.log("Desktop screen detected: showing 2 slides.");
+      }
+    }
+
+    // Initial check
+    handleScreenSizeChange(mobileQuery);
+
+    // Listen for changes
+    mobileQuery.addListener(handleScreenSizeChange);
   </script>
+
+
 </body>
 
 </html>
