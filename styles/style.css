@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: poppins;
-    src: url("./assets/fonts/Poppins-Regular.ttf");
+    src: url("../assets/fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
     font-family: "Bold poppins";
-    src: url("./assets/fonts/Poppins-Bold.ttf");
+    src: url("../assets/fonts/Poppins-Bold.ttf");
 }
 
 * {
@@ -51,7 +51,7 @@ header {
     width: 60px;
 }
 
-header div:not(:nth-child(2)) {
+header div:not(.logo, .navbar-box, .search-box) {
     display: flex;
     gap: 25px;
     align-items: center;
@@ -101,6 +101,16 @@ header a {
 
     &:hover>small {
         background-color: #b60109;
+    }
+}
+
+.navbar-box,
+.search-box {
+    display: none;
+    cursor: pointer;
+
+    &>i {
+        color: #fff;
     }
 }
 
@@ -399,14 +409,16 @@ header a {
 
 .img-content {
     position: absolute;
-    top: 35%;
-    width: 45%;
-    margin-left: 4%;
+    top: 0px;
     color: #fff;
+    margin-left: 25px;
     display: flex;
+    flex-direction: c;
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    height: 80%;
+    gap: 5px;
+    justify-content: flex-end;
 }
 
 .img-content .heading {
@@ -414,6 +426,10 @@ header a {
     font-family: bold poppins;
     line-height: 80px;
     margin-bottom: 10px;
+}
+
+.img-content .para {
+    width: 54%;
 }
 
 .img-content a {
@@ -953,6 +969,7 @@ footer {
         margin-right: 4px;
         font-size: 14px;
     }
+
     &>div>b {
         font-size: 15px;
     }
