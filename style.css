@@ -110,7 +110,7 @@ header a {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     background-color: #000;
@@ -121,11 +121,12 @@ header a {
     width: 96%;
     display: flex;
     gap: 5%;
+    margin: 0 3%;
     align-items: center;
 }
 
 .hero-content {
-    flex: 3.2;
+    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -140,17 +141,17 @@ header a {
 }
 
 .hero-video {
-    flex: 6.5;
+    flex: 6;
     display: flex;
-    align-items: center;
+    justify-content: end;
     width: 100%;
     height: 100%;
 }
 
 .hero-video iframe {
-    width: 100%;
-    height: 70%;
     border-radius: 6px;
+    width: 500px;
+    height: 350px;
 }
 
 .hero-title {
@@ -795,12 +796,11 @@ header a {
 footer {
     background-color: #000;
     color: #fff;
-    /* height: 90vh; */
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 140vh;
 }
 
 .footer-container {
@@ -816,9 +816,10 @@ footer {
 .footer-content {
     margin-top: 10px;
     width: 100%;
-    height: 100%;
+    height: 56%;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: 5%;
 }
 
@@ -851,7 +852,7 @@ footer {
 
 .footer-links-container {
     width: 40%;
-    height: 24%;
+    height: 70%;
     position: relative;
     z-index: 1;
 }
@@ -859,16 +860,24 @@ footer {
 .footer-links-container>ul {
     list-style: none;
     display: flex;
-    gap: 10px;
     height: 100%;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    gap: 2% 5%;
+
+    &>li {
+        /* background-color: red; */
+        width: 33%;
+        height: 18%;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .footer-follow-links {
     width: 20%;
-    height: 24%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -891,7 +900,7 @@ footer {
     width: 80%;
 
     &>a {
-        background-color: #222222;
+        background-color: #2e2e2e;
         padding: 5px;
         width: 18px;
         height: 18px;
@@ -899,30 +908,52 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
 
         &>i {
             font-size: 15px;
+        }
+
+        &:hover {
+            background-color: #696969;
         }
     }
 }
 
 .footer-others-links {
     width: 100%;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    background-color: green;
+    border-top: 1px solid #696969;
+    padding: 5px;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .footer-others-links>ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
+    align-items: flex-start;
+    column-gap: 25px;
 
     &>li>a {
         color: var(--gray);
 
+    }
+}
+
+.page-details {
+    display: flex;
+    gap: 14%;
+    width: 100%;
+    flex-wrap: wrap;
+    color: var(--gray);
+
+    &>div>span {
+        margin-right: 4px;
+        font-size: 14px;
+    }
+    &>div>b {
+        font-size: 15px;
     }
 }
 
