@@ -1,0 +1,180 @@
+@media only screen and (max-width:1024px) {
+
+    /* header styling */
+    .navbar-box {
+        display: block;
+    }
+
+    .search-box {
+        display: block;
+    }
+
+    header>div:is(:nth-child(2), :nth-child(4)) {
+        display: none !important;
+    }
+
+    .img-content h1 {
+        font-size: 3rem !important;
+
+    }
+
+    .img-container .img-box img {
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width:800px) {
+
+    /* hero-section styling */
+    .hero-section {
+        height: min-content;
+    }
+
+    .hero-section .container {
+        display: block;
+    }
+
+    .hero-content {
+        height: min-content;
+    }
+
+    .hero-video {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .hero-video>iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* human space styling */
+    .humanSpace-container .row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .humanSpace-container .row .cols {
+
+        & .dark-overlay {
+            height: 90%;
+        }
+    }
+
+    .imageOfTheDayInner {
+        flex-direction: column;
+    }
+
+    .aboutNASA {
+        padding: 12px;
+    }
+
+    .aboutNASA .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+
+        &>video {
+            width: 60%;
+            height: 100%;
+
+        }
+    }
+
+    /* footer styling */
+    footer {
+        height: auto;
+    }
+
+
+    .footer-follow-links {
+        height: auto;
+        width: 100%;
+    }
+
+    .footer-links-container {
+        width: 60%;
+        position: relative;
+        z-index: 1;
+        height: 258px;
+    }
+}
+
+@media only screen and (max-width:740px) {
+
+    /* featured News */
+    .featuredNewsHead {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    .featuredNewsRow1 {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .featuredNewsRow1 .boxes {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .featuredNewsRow2 {
+        flex-wrap: wrap;
+    }
+
+    /* topicOfNasa styling */
+    .topicsOfNasa .cols {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+
+        &>video {
+            width: 80%;
+            height: 100%;
+
+        }
+    }
+
+    .footer-content>div {
+        width: 100%;
+    }
+
+    .footer-links-container {
+        width: 0%;
+        position: relative;
+        z-index: 1;
+        height: 208px;
+    }
+
+    .footer-links-container>ul>li {
+        width: auto;
+        height: 18%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .footer-links-container>ul>li {
+        height: 10%;
+    }
+}
