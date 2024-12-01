@@ -138,6 +138,19 @@
     .topicsOfNasa .cols {
         width: 100%;
     }
+
+    /* slider */
+    .swiper-wrapper>.boxes {
+        height: 250px;
+    }
+
+    .swiper-slide .img-boxes>div:nth-child(2) {
+        height: 49.5%;
+    }
+
+    .moreImagesSection .swiper {
+        height: 40vh;
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -172,8 +185,6 @@
         align-items: center;
     }
 
-    .swiper-wrapper>.boxes {
-    }
 }
 
 @media only screen and (max-width:450px) {
