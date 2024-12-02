@@ -230,7 +230,7 @@ header a {
     width: 95%;
 }
 
-.featuredNewsHead {
+.featuredNewsHead , .humanSpaceHead {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -257,11 +257,6 @@ header a {
 .featuredNewsRow1>div:first-child {
     flex: 5.5;
 }
-
-/* extra */
-/* body {
-    height: 10200px;
-} */
 
 .featuredNewsRow1>div:nth-child(2) {
     flex: 2.2;
@@ -771,6 +766,7 @@ header a {
     /* flex: ; */
     width: 24%;
     height: auto;
+min-height: 350px;
     position: relative;
 
     &>.img-box {
@@ -811,7 +807,7 @@ header a {
 footer {
     background-color: #000;
     color: #fff;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -13,7 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- favicon -->
-   <link rel="icon" href="http://127.0.0.1:5500/assets/images/nasa-logo.svg">
+  <link rel="icon" href="http://127.0.0.1:5500/assets/images/nasa-logo.svg">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -229,7 +229,7 @@
     </div>
     <div class="humanSpace-container">
       <div class="container">
-        <div class="featuredNewsHead">
+        <div class="humanSpaceHead">
           <h2>Humans in Space</h2>
           <a href="" class="primary-link">
             <span>Discover More</span>
@@ -285,7 +285,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="img-container">
+    <div class="img-container">
       <div class="img-box">
         <img src="https://www.nasa.gov/wp-content/uploads/2024/11/ksc-20171214-ph-sww01-0009orig.jpeg?resize=2000,1333"
           class="image" alt="" />
@@ -305,7 +305,7 @@
           </a>
         </div>
       </div>
-    </div> -->
+    </div>
     <section class="imageOfTheDay">
       <div class="container">
         <div class="imageOfTheDayInner">
@@ -342,7 +342,7 @@
         </div>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="boxes swiper-slide">
+            <div class="boxes left swiper-slide">
               <a class="" href="">
                 <div class="img-boxes">
                   <div>
@@ -360,7 +360,7 @@
                 </div>
               </a>
             </div>
-            <div class="boxes swiper-slide">
+            <div class="boxes right swiper-slide">
               <a class="" href="">
                 <div class="img-boxes">
                   <div>
@@ -594,10 +594,10 @@
                 Follow NASA
               </div>
               <div class="linksInIcons">
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-x-twitter"></i></a>
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href="" class="icons"><i class="fab fa-instagram"></i></a>
+                <a href="" class="icons"><i class="fab fa-x-twitter"></i></a>
+                <a href="" class="icons"><i class="fab fa-facebook"></i></a>
+                <a href="" class="icons"><i class="fab fa-youtube"></i></a>
               </div>
               <div><a href="">More NASA Social Accounts</a></div>
               <div><a href="">NASA Newsletters</a></div>
@@ -664,8 +664,9 @@
     // Listen for changes
     mobileQuery.addListener(handleScreenSizeChange);
   </script>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

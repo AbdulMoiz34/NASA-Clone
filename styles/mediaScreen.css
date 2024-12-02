@@ -14,12 +14,18 @@
     }
 
     .img-content h1 {
-        font-size: 3rem !important;
+        font-size: 1.5rem !important;
+        line-height: normal !important;
 
     }
 
+    .img-content .para {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
     .img-container .img-box img {
-        height: auto !important;
+        height: 100vh !important;
     }
 }
 
@@ -145,11 +151,12 @@
     }
 
     .swiper-slide .img-boxes>div:nth-child(2) {
-        height: 49.5%;
+        min-height: 49.5%;
     }
 
     .moreImagesSection .swiper {
-        height: 40vh;
+        min-height: 43vh;
+        max-height: 45vh;
     }
 }
 
