@@ -176,7 +176,7 @@ gsap.from(".humanSpaceHead :is(h2 ,a), .humanSpace-container .cols", {
   scrollTrigger: {
     trigger: ".humanSpace-container",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 50%",
     end: "top 0",
   },
@@ -189,7 +189,7 @@ gsap.from(".topicsOfNasa :is(h2,.cols)", {
   scrollTrigger: {
     trigger: ".topicsOfNasa",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 50%",
     end: "top 0",
   },
