@@ -158,15 +158,6 @@ gsap.from(".aboutNASA-content >* ,.video-container", {
   ease: "power1.out",
 });
 
-// const t5 = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".humanSpace-container",
-//     scroller: "body",
-//     markers: true
-//   },
-// });
-
-
 // Apply animation on humanSpaceContainer and topic of nasa container
 gsap.from(".humanSpaceHead :is(h2 ,a), .humanSpace-container .cols", {
   opacity: 0,
@@ -194,4 +185,3 @@ gsap.from(".topicsOfNasa :is(h2,.cols)", {
     end: "top 0",
   },
 });
-
