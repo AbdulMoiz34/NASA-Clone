@@ -172,7 +172,7 @@ gsap.from(".humanSpaceHead :is(h2 ,a), .humanSpace-container .cols", {
     end: "top 0",
   },
 });
-gsap.from(".topicsOfNasa :is(h2,.cols)", {
+gsap.from(".topicsOfNasa :is(h2, .cols)", {
   opacity: 0,
   x: 20,
   duration: 1,
